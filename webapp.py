@@ -51,8 +51,8 @@ car_positions = {
     14: [72.878057, 21.204618],
     15: [77.717389, 13.256997]
 }
-#start = get_current_coordinates()
-start = [12.895033, 77.675858]
+start = get_current_coordinates()
+#start = [12.895033, 77.675858]
 #Front-End
 st.title("Emergency Route Optimization using LoRAWAN")
 st.subheader("Current Location")   
@@ -61,8 +61,8 @@ col1.metric("Latitude", start[0])
 col2.metric("Longitude", start[1])
 destination = st.text_input("Enter your destination : ")
 if(st.button("Look for vehicles")):
-    #start = get_current_coordinates()
-    start = [12.895033, 77.675858]
+    start = get_current_coordinates()
+    #start = [12.895033, 77.675858]
     start_s = swap(start)
     end = dest_location(destination)
     st.text("Destination Coordinates")
